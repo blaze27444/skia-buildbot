@@ -111,7 +111,8 @@
     "lint:go:vet": "bazelisk run --config=mayberemote //:go -- vet ./...",
     "lint:py": "./run_lint.sh py",
     "lint:sh": "./run_lint.sh sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm"
   },
   "repository": {
     "type": "git",
